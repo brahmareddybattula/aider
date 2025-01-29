@@ -1882,7 +1882,16 @@ class Coder:
 
         if new.rstrip() != new and not final:
             new = new.rstrip()
-        return cur + new
+
+        res = cur + new
+
+        if self.main_model.remove_reasoning:
+            pattern = (
+                f"<{self.main_model.remove_reasoning}>.*?</{self.main_model.remove_reasoning}>"
+            )
+            res = re.sub(pattern, "", res, flags=re.DOTALL).strip()
+
+        return res
 
     def get_rel_fname(self, fname):
         try:
