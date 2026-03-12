@@ -4,7 +4,7 @@ aiohappyeyeballs==2.6.1
     # via
     #   -c requirements/common-constraints.txt
     #   aiohttp
-aiohttp==3.11.13
+aiohttp==3.13.3
     # via
     #   -c requirements/common-constraints.txt
     #   litellm
@@ -220,7 +220,7 @@ pillow==11.1.0
     # via
     #   -c requirements/common-constraints.txt
     #   -r requirements/requirements.in
-pip==25.0.1
+pip==26.0
     # via
     #   -c requirements/common-constraints.txt
     #   -r requirements/requirements.in
@@ -397,7 +397,7 @@ typing-extensions==4.12.2
     #   pydantic
     #   pydantic-core
     #   referencing
-urllib3==2.3.0
+urllib3==2.6.3
     # via
     #   -c requirements/common-constraints.txt
     #   mixpanel
